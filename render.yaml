@@ -2,6 +2,7 @@ services:
   - type: web
     name: fastapi-app
     env: python
+    rootDir: backend  # <-- QUAN TRỌNG: chỉ định rootDir
     buildCommand: |
       # Force sử dụng Python 3.10
       python3.10 -m pip install --upgrade pip
