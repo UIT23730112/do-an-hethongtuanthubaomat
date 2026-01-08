@@ -3,10 +3,13 @@ services:
     name: fastapi-app
     env: python
     buildCommand: |
-      pip install --upgrade pip
-      pip install torch==2.1.2 --index-url https://download.pytorch.org/whl/cpu
-      pip install -r requirements.txt
+      # Force sử dụng Python 3.10
+      python3.10 -m pip install --upgrade pip
+      python3.10 -m pip install setuptools==69.5.1 wheel
+      python3.10 -m pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.14
+      - key: PIP_VERSION
+        value: 23.3.2
