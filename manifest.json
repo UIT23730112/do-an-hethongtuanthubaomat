@@ -1,0 +1,25 @@
+{
+  "short_name": "Tuân thủ",
+  "name": "Hệ thống Tuân thủ",
+  "description": "Phân tích mức độ tuân thủ bảo vệ dữ liệu cá nhân",
+  "icons": [
+    {
+      "src": "logoapp.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logoapp.ico",
+      "type": "image/x-icon",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1a1a2e",
+  "background_color": "#0f0f1a",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "utilities"],
+  "lang": "vi-VN"
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/do-an-hethongtuanthubaomat/static/css/main.b79b06a1.css",
+    "main.js": "/do-an-hethongtuanthubaomat/static/js/main.41bfc7c2.js",
+    "static/js/453.f5eb7c75.chunk.js": "/do-an-hethongtuanthubaomat/static/js/453.f5eb7c75.chunk.js",
+    "index.html": "/do-an-hethongtuanthubaomat/index.html",
+    "main.b79b06a1.css.map": "/do-an-hethongtuanthubaomat/static/css/main.b79b06a1.css.map",
+    "main.41bfc7c2.js.map": "/do-an-hethongtuanthubaomat/static/js/main.41bfc7c2.js.map",
+    "453.f5eb7c75.chunk.js.map": "/do-an-hethongtuanthubaomat/static/js/453.f5eb7c75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b79b06a1.css",
+    "static/js/main.41bfc7c2.js"
+  ]
+}
