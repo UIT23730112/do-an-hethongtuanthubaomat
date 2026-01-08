@@ -11,11 +11,12 @@ app = FastAPI(
 )
 
 # Thêm các origins
+# Tìm origins và thêm:
 origins = [
     "http://localhost:3000",
-    "http://localhost:3001", 
-    "http://127.0.0.1:3000",
-    "http://localhost:8000",
+    "http://localhost:8000", 
+    "https://uit23730112.github.io",
+    "https://uit23730112.github.io/do-an-hethongtuanthubaomat",
 ]
 
 app.add_middleware(
@@ -28,7 +29,7 @@ app.add_middleware(
 )
 
 # Routes
-from app.api import analyze, ui_history, ui
+from .api import analyze, ui_history, ui
 
 # Chỉ include các API endpoints
 app.include_router(analyze.router, prefix="/api", tags=["analysis"])
