@@ -507,5 +507,108 @@ COMPLIANCE_RULES: List[Dict] = [
         ],
         "severity": "HIGH",
         "weight": 3
+    },
+    #SEMANTIC_RULE
+    # THAY THẾ 8 semantic rules cũ bằng:
+
+# Thêm vào COMPLIANCE_RULES - BILINGUAL SEMANTIC RULES
+
+    {
+        "rule_id": "SEM-BI-01",
+        "group": "Semantic Analysis (Bilingual)",
+        "description": "Thu thập không giới hạn dữ liệu cá nhân | Unlimited data collection",
+        "keywords": ["[SEMANTIC_ONLY]"],  # DUMMY KEYWORD - chỉ dùng semantic
+        "use_semantic": True,  # QUAN TRỌNG: Bật semantic detection
+        "semantic_pattern_en": "We collect all available information about you",
+        "semantic_pattern_vi": "Chúng tôi thu thập tất cả thông tin có sẵn về bạn",
+        "severity": "HIGH",
+        "weight": 3,
+        "violation_severity": "HGH"
+    },
+    {
+        "rule_id": "SEM-BI-02",
+        "group": "Semantic Analysis (Bilingual)", 
+        "description": "Lưu trữ dữ liệu vô thời hạn | Indefinite data storage",
+        "keywords": ["[SEMANTIC_ONLY]"],
+        "use_semantic": True,
+        "semantic_pattern_en": "Your data will be stored indefinitely without deletion",
+        "semantic_pattern_vi": "Dữ liệu sẽ được lưu trữ vĩnh viễn không xóa",
+        "severity": "HIGH",
+        "weight": 3,
+        "violation_severity": "HGH"
+    },
+    {
+        "rule_id": "SEM-BI-03",
+        "group": "Semantic Analysis (Bilingual)",
+        "description": "Từ chối trách nhiệm bảo mật dữ liệu | No security guarantee",
+        "keywords": ["[SEMANTIC_ONLY]"],
+        "use_semantic": True,
+        "semantic_pattern_en": "We cannot guarantee the security of your information",
+        "semantic_pattern_vi": "Không đảm bảo an toàn cho thông tin của bạn",
+        "severity": "HIGH",
+        "weight": 3,
+        "violation_severity": "HGH"
+    },
+    {
+        "rule_id": "SEM-BI-04",
+        "group": "Semantic Analysis (Bilingual)",
+        "description": "Ép buộc từ bỏ quyền khiếu nại | Forced waiver of complaint rights",
+        "keywords": ["[SEMANTIC_ONLY]"],
+        "use_semantic": True,
+        "semantic_pattern_en": "You waive all rights to complain about data handling",
+        "semantic_pattern_vi": "Bạn từ bỏ quyền khiếu nại về cách xử lý dữ liệu",
+        "severity": "HIGH",
+        "weight": 3,
+        "violation_severity": "HGH"
+    },
+    {
+        "rule_id": "SEM-BI-05",
+        "group": "Semantic Analysis (Bilingual)",
+        "description": "Đồng ý ngầm định | Implied consent by continued use",
+        "keywords": ["[SEMANTIC_ONLY]"],
+        "use_semantic": True,
+        "semantic_pattern_en": "Continued use means you agree to all terms",
+        "semantic_pattern_vi": "Tiếp tục sử dụng có nghĩa là bạn đồng ý",
+        "severity": "MEDIUM",
+        "weight": 2,
+        "violation_severity": "HGH"
+    },
+    {
+        "rule_id": "SEM-BI-06",
+        "group": "Semantic Analysis (Bilingual)",
+        "description": "Mục đích xử lý quá rộng | Overly broad purpose specification",
+        "keywords": ["[SEMANTIC_ONLY]"],
+        "use_semantic": True,
+        "semantic_pattern_en": "We may use your data for any purpose we see fit",
+        "semantic_pattern_vi": "Có thể dùng dữ liệu cho bất kỳ mục đích nào",
+        "severity": "MEDIUM",
+        "weight": 2,
+        "violation_severity": "HGH"
+    },
+    {
+        "rule_id": "SEM-BI-07",
+        "group": "Semantic Analysis (Bilingual)",
+        "description": "Từ chối trách nhiệm về tính chính xác | Disclaimed responsibility for data accuracy",
+        "keywords": ["[SEMANTIC_ONLY]"],
+        "use_semantic": True,
+        "semantic_pattern_en": "We are not responsible for data accuracy",
+        "semantic_pattern_vi": "Không chịu trách nhiệm về độ chính xác thông tin",
+        "severity": "MEDIUM",
+        "weight": 2,
+        "violation_severity": "HGH"
+
+    },
+    {
+        "rule_id": "SEM-BI-08",
+        "group": "Semantic Analysis (Bilingual)",
+        "description": "Trao quyền sử dụng dữ liệu quá rộng | Overly broad data usage rights",
+        "keywords": ["[SEMANTIC_ONLY]"],
+        "use_semantic": True,
+        "semantic_pattern_en": "We have full rights to use your data as we wish",
+        "semantic_pattern_vi": "Chúng tôi có toàn quyền sử dụng dữ liệu của bạn",
+        "severity": "HIGH",
+        "weight": 3,
+        "violation_severity": "HGH"
+
     }
-]
+    ]
